@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Coutinho | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Header and Navbar -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="img/logo.png" alt="logo" id="logo" />
+          <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="about.html">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1>Hello There.</h1>
+          <h2>Joshua here, a self taught Web Developer</h2>
+          <a href="about.html" class="btn-light">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Section: Services offered -->
+    <section id="home-a" class="text-center py-2">
+      <div class="container">
+        <h2 class="section-title">Services Offered</h2>
+        <div class="bottom-line"></div>
+        <div class="services">
+          <div>
+            <img src="./img/grid-images/webcode.png" alt="webcode" srcset="" />
+            <h3>Front End Web Development</h3>
+          </div>
+          <div>
+            <img src="./img/grid-images/mobilecode.png" alt="mobilecode" srcset="" />
+            <h3>Responsive Scalable Web Apps</h3>
+          </div>
+          <div>
+            <img src="./img/grid-images/design.png" alt="design" srcset="" />
+            <h3>Visual Design Consulting</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2020, All Rights Reserved</p>
+        <div class="social">
+          <a href="https://twitter.com/allen_herze" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/gadgetunboxed/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/joshuacoutinho/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/joshua-coutinho-353277143/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Modal Contact form -->
+
+    <button class="btn-modal"><i class="fas fa-comments fa-2x"></i></button>
+
+    <div id="my-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Business Enquiry</h2>
+          <div class="bottom-line"></div>
+        </div>
+        <div class="modal-body">
+          <p>
+            Want to get in touch with me <br />
+            Please fill out the form below and I'll get back to you
+          </p>
+          <form action="" method="post">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" placeholder="Phone Number" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email Address" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" placeholder="Leave a Message"></textarea>
+            </div>
+          </form>
+
+          <button class="btn-dark" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

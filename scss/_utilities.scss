@@ -1,0 +1,73 @@
+.container {
+  max-width: $website-width;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+// Buttons
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  transition: all 450ms;
+  border-radius: 10px;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background: #fff;
+    color: #333;
+  }
+
+  &-dark {
+    @extend %btn-shared;
+    background: #333;
+    color: #fff;
+  }
+
+  &-modal {
+    padding: 1rem;
+    background: $secondary-color;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+  }
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background: $primary-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Section title
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+}
+
+// Bottom Line
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $text-primary;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,257 @@
+@import "config";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// General Styles
+
+body {
+  font-family: "Barlow", sans-serif;
+  line-height: 1.5;
+  color: $text-primary;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-primary;
+}
+
+img {
+  width: 100%;
+}
+
+// Navbar
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem 0 1rem;
+
+  #logo {
+    height: 70px;
+    width: 70px;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    margin: 0 1rem;
+    padding: 1rem 0;
+  }
+  a {
+    font-size: 1.1rem;
+    border-bottom: 3px transparent $accent-color;
+    padding-bottom: 0.5rem;
+    transition: all 250ms;
+    margin: 0 1rem;
+    &:hover {
+      border-bottom: 3px solid $accent-color;
+    }
+  }
+}
+
+#header {
+  &-home {
+    background: $bg-image no-repeat center center/cover;
+    height: 100vh;
+
+    .header-content {
+      text-align: center;
+      padding-top: 15%;
+
+      h1 {
+        font-size: 4rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin: 1rem 0;
+      }
+
+      a {
+        margin-top: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Services offered section
+
+#home {
+  &-a {
+    background: $primary-color;
+    padding: 4rem;
+    .services {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+      text-align: center;
+    }
+
+    h3 {
+      margin-top: 0.5rem;
+    }
+
+    img {
+      transform: scale(0.8);
+      -webkit-box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
+      -moz-box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
+      box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
+      border-radius: 10px;
+    }
+  }
+}
+
+// Footer
+
+#main-footer {
+  background: $secondary-color;
+  color: #fff;
+  height: 5rem;
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+
+    .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+}
+
+// Modal Form
+
+.btn-modal {
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  .modal-content {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    background-color: #fff;
+    margin: 10% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 750ms;
+  }
+
+  .modal-header {
+    padding: 1rem 1rem 0.5rem 0.2rem;
+    color: #000;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-left: 2rem;
+    }
+  }
+
+  .bottom-line {
+    background: #333;
+    margin-top: 10px;
+  }
+
+  .modal-body {
+    background-color: $text-primary;
+    color: #000;
+    padding: 0 1.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .form-group {
+    width: 80%;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+
+    &:first-child {
+      margin-top: 0.5rem;
+    }
+  }
+
+  input {
+    width: 100%;
+    height: 20px;
+    border: 1px solid #777;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 70px;
+    border: 1px solid #777;
+    padding: 0.3rem;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  button {
+    margin: 1rem 0;
+  }
+
+  .close {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    padding: 0 1.2rem 1rem 0;
+    cursor: default;
+  }
+
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
