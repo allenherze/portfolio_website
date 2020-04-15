@@ -3,5 +3,6 @@ $primary-color: #39a2ae;
 $secondary-color: #5171a5;
 $text-primary: #ffffff;
 $text-secondary: #333333;
-$accent-color: #09814a;
+$accent-color: #bee6ce;
 $bg-image: url("../img/bg.jpg");
+$bg-gradient: linear-gradient(to right, $primary-color 40%, $secondary-color 100%);

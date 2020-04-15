@@ -49,7 +49,7 @@ img {
     padding: 1rem 0;
   }
   a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border-bottom: 3px transparent $accent-color;
     padding-bottom: 0.5rem;
     transition: all 250ms;
@@ -85,6 +85,12 @@ img {
       }
     }
   }
+
+  &-inner {
+    background: $bg-gradient;
+    height: 7rem;
+    border-bottom: 1px solid #fff;
+  }
 }
 
 // Services offered section
@@ -111,6 +117,85 @@ img {
       -moz-box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
       box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
       border-radius: 10px;
+    }
+  }
+}
+
+// About Section
+
+#about {
+  &-a {
+    background: $bg-gradient;
+    height: 80vh;
+    padding: 2rem 0;
+    border-bottom: 1px solid #fff;
+
+    .about-info {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 40px;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      transform: scale(0.7);
+      border-radius: 5px;
+      -webkit-box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
+      -moz-box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
+      box-shadow: 15px 10px 10px 0px rgba(119, 119, 119, 1);
+    }
+  }
+
+  &-b {
+    background: #2f858f;
+    padding: 2rem;
+    height: 60vh;
+    border-bottom: 1px solid #fff;
+
+    .process {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+      text-align: center;
+    }
+
+    .card {
+      border: 1px solid #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      height: auto;
+
+      .fas {
+        padding: 1rem;
+      }
+
+      h3 {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+      }
+
+      p {
+        font-weight: 300;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  &-c {
+    background: #8097bd;
+    padding: 2rem 0;
+    border-bottom: 1px solid #fff;
+
+    img {
+      display: block;
+      width: 600px;
+      height: auto;
+      transform-origin: left;
+      padding: 0;
+      margin: 1rem 0;
     }
   }
 }
