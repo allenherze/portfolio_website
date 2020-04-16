@@ -52,6 +52,18 @@ input[class^="btn-"]:hover {
   font-size: 1.3rem;
   font-weight: 500; }
 
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -329,14 +341,76 @@ img {
     font-size: 2rem; }
   #header-home .header-content h2 {
     font-size: 1rem; }
+  #home-a,
+  #about-b {
+    padding: 1.5rem 0; }
   #home-a .services,
+  #about-a .about-info,
   #about-b .process {
     grid-template-columns: 1fr; }
+  #about-a p {
+    font-size: 1.1rem; }
+  #about-c {
+    text-align: center; }
+    #about-c h2:nth-child(3) {
+      font-size: 1.2rem; }
+    #about-c img {
+      width: 100%; }
   #main-footer .footer-content {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     #main-footer .footer-content p {
       padding-bottom: 0.2rem; }
+  .btn-light, .btn-dark {
+    padding: 0.5rem 1.2rem; }
+  .btn-modal {
+    padding: 0.8rem;
+    bottom: 10%;
+    right: 10px; }
+    .btn-modal .fas {
+      font-size: 1.4rem; }
+  .modal {
+    height: 100%; }
+    .modal .modal-content {
+      margin: 5% auto;
+      width: 85%;
+      height: 60%; }
+    .modal .modal-header {
+      padding: 0.5rem 0 0 0; }
+      .modal .modal-header h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem; }
+    .modal .modal-body {
+      padding: 0 0.5rem; }
+      .modal .modal-body p,
+      .modal .modal-body label {
+        font-size: 0.9rem; }
+    .modal .bottom-line {
+      margin-top: 5px; }
+  .hide-on-small {
+    display: none; } }
+
+@media (max-width: 800px) and (orientation: landscape) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 10%; }
+      #header-home .header-content h1 {
+        font-size: 2rem; }
+      #header-home .header-content h2 {
+        font-size: 1rem; }
+  .btn-light, .btn-dark {
+    padding: 0.5rem 1.2rem; } }
+
+@media (min-height: 350px) and (orientation: landscape) {
+  #header-home {
+    height: 30rem; }
+    #header-home .header-content {
+      padding-top: 10%; }
+      #header-home .header-content h1 {
+        font-size: 2rem; }
+      #header-home .header-content h2 {
+        font-size: 1rem; }
   .btn-light, .btn-dark {
     padding: 0.5rem 1.2rem; } }

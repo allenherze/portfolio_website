@@ -89,9 +89,32 @@
     }
   }
 
+  #home-a,
+  #about-b {
+    padding: 1.5rem 0;
+  }
+
   #home-a .services,
+  #about-a .about-info,
   #about-b .process {
     grid-template-columns: 1fr;
+  }
+
+  #about {
+    &-a {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    &-c {
+      text-align: center;
+      h2:nth-child(3) {
+        font-size: 1.2rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
   }
 
   #main-footer {
@@ -101,6 +124,94 @@
       align-items: center;
       p {
         padding-bottom: 0.2rem;
+      }
+    }
+  }
+
+  %btn-shared {
+    padding: 0.5rem 1.2rem;
+  }
+
+  .btn-modal {
+    padding: 0.8rem;
+    bottom: 10%;
+    right: 10px;
+    .fas {
+      font-size: 1.4rem;
+    }
+  }
+
+  .modal {
+    height: 100%;
+
+    .modal-content {
+      margin: 5% auto;
+      width: 85%;
+      height: 60%;
+    }
+
+    .modal-header {
+      padding: 0.5rem 0 0 0;
+      h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+      }
+    }
+
+    .modal-body {
+      padding: 0 0.5rem;
+
+      p,
+      label {
+        font-size: 0.9rem;
+      }
+    }
+
+    .bottom-line {
+      margin-top: 5px;
+    }
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 10%;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  %btn-shared {
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+@media (min-height: 350px) and (orientation: landscape) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 10%;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1rem;
       }
     }
   }
