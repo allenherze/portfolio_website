@@ -199,7 +199,7 @@
   }
 }
 
-@media (min-height: 350px) and (orientation: landscape) {
+@media (max-height: 400px) and (orientation: landscape) {
   #header-home {
     height: 30rem;
 
@@ -216,7 +216,19 @@
     }
   }
 
+  .modal {
+    .modal-content {
+      height: 100%;
+      overflow: auto;
+      margin: 0 auto;
+    }
+  }
+
   %btn-shared {
     padding: 0.5rem 1.2rem;
+  }
+
+  .btn-modal {
+    font-size: 0.7rem;
   }
 }

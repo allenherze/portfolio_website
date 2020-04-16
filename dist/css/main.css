@@ -403,7 +403,7 @@ img {
   .btn-light, .btn-dark {
     padding: 0.5rem 1.2rem; } }
 
-@media (min-height: 350px) and (orientation: landscape) {
+@media (max-height: 400px) and (orientation: landscape) {
   #header-home {
     height: 30rem; }
     #header-home .header-content {
@@ -412,5 +412,11 @@ img {
         font-size: 2rem; }
       #header-home .header-content h2 {
         font-size: 1rem; }
+  .modal .modal-content {
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto; }
   .btn-light, .btn-dark {
-    padding: 0.5rem 1.2rem; } }
+    padding: 0.5rem 1.2rem; }
+  .btn-modal {
+    font-size: 0.7rem; } }
