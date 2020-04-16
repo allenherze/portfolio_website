@@ -68,6 +68,9 @@ input[class^="btn-"]:hover {
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   font-family: "Barlow", sans-serif;
   line-height: 1.5;
