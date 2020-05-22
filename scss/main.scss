@@ -193,6 +193,16 @@ img {
     padding: 2rem 0;
     border-bottom: 1px solid #fff;
 
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5rem;
+
+      .card {
+        margin-bottom: 1rem;
+      }
+    }
+
     img {
       display: block;
       width: 600px;

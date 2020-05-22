@@ -53,8 +53,13 @@
     }
   }
 
-  #about-b .process {
+  #about-b .process,
+  #about-c .portfolio {
     grid-template-columns: 1fr;
+  }
+
+  #about-c .portfolio {
+    grid-gap: 1rem;
   }
 
   .modal {
@@ -96,7 +101,8 @@
 
   #home-a .services,
   #about-a .about-info,
-  #about-b .process {
+  #about-b .process,
+  #about-c .portfolio {
     grid-template-columns: 1fr;
   }
 
@@ -113,6 +119,10 @@
       }
       img {
         width: 100%;
+      }
+
+      .portfolio {
+        grid-gap: 1rem;
       }
     }
   }

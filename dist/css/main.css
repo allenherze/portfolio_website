@@ -195,6 +195,12 @@ img {
   background: #8097bd;
   padding: 2rem 0;
   border-bottom: 1px solid #fff; }
+  #about-c .portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5rem; }
+    #about-c .portfolio .card {
+      margin-bottom: 1rem; }
   #about-c img {
     display: block;
     width: 600px;
@@ -327,8 +333,11 @@ img {
 @media (max-width: 800px) {
   #header-home .header-content {
     padding-top: 25%; }
-  #about-b .process {
+  #about-b .process,
+  #about-c .portfolio {
     grid-template-columns: 1fr; }
+  #about-c .portfolio {
+    grid-gap: 1rem; }
   .modal .modal-content {
     margin: 20% auto; } }
 
@@ -349,7 +358,8 @@ img {
     padding: 1.5rem 0; }
   #home-a .services,
   #about-a .about-info,
-  #about-b .process {
+  #about-b .process,
+  #about-c .portfolio {
     grid-template-columns: 1fr; }
   #about-a p {
     font-size: 1.1rem; }
@@ -359,6 +369,8 @@ img {
       font-size: 1.2rem; }
     #about-c img {
       width: 100%; }
+    #about-c .portfolio {
+      grid-gap: 1rem; }
   #main-footer .footer-content {
     flex-direction: column;
     justify-content: center;
