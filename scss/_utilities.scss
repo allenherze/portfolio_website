@@ -84,3 +84,11 @@ input[class^="btn-"]:hover {
 .py-4 {
   padding: 4rem 0;
 }
+
+.wip-tag {
+  display: inline;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  background: $primary-color;
+  border-radius: 5px;
+}

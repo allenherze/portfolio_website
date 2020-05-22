@@ -53,7 +53,7 @@ img {
     padding: 1rem 0;
   }
   a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border-bottom: 3px transparent $accent-color;
     padding-bottom: 0.5rem;
     transition: all 250ms;
@@ -200,6 +200,17 @@ img {
 
       .card {
         margin-bottom: 1rem;
+      }
+
+      .media {
+        display: inline-block;
+      }
+      small {
+        display: inline;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        background: $primary-color;
+        border-radius: 5px;
       }
     }
 

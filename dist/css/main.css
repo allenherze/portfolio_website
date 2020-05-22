@@ -64,6 +64,13 @@ input[class^="btn-"]:hover {
 .py-4 {
   padding: 4rem 0; }
 
+.wip-tag {
+  display: inline;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  background: #39a2ae;
+  border-radius: 5px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -100,7 +107,7 @@ img {
     margin: 0 1rem;
     padding: 1rem 0; }
   #main-nav a {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     border-bottom: 3px transparent #bee6ce;
     padding-bottom: 0.5rem;
     transition: all 250ms;
@@ -201,6 +208,14 @@ img {
     grid-gap: 5rem; }
     #about-c .portfolio .card {
       margin-bottom: 1rem; }
+    #about-c .portfolio .media {
+      display: inline-block; }
+    #about-c .portfolio small {
+      display: inline;
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      background: #39a2ae;
+      border-radius: 5px; }
   #about-c img {
     display: block;
     width: 600px;
