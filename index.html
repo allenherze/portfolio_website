@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png" />
+    <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Joshua Coutinho</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <!-- Navbar -->
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="#home"
+            ><svg width="50" height="50" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="65" cy="65" r="62.5" stroke="white" stroke-width="5" />
+              <path
+                d="M48.7479 46.854H53.2713V71.0181C53.2713 74.2837 52.2869 76.8384 50.3182 78.6821C48.3651 80.5259 45.7557 81.4478 42.4901 81.4478C39.0994 81.4478 36.4588 80.5806 34.5682 78.8462C32.6776 77.1118 31.7322 74.6821 31.7322 71.5571H36.2322C36.2322 73.5103 36.7635 75.0337 37.826 76.1274C38.9041 77.2212 40.4588 77.7681 42.4901 77.7681C44.3494 77.7681 45.8494 77.1821 46.9901 76.0103C48.1463 74.8384 48.7322 73.1978 48.7479 71.0884V46.854ZM97.9432 70.1509C97.5213 73.7603 96.1854 76.5493 93.9354 78.5181C91.701 80.4712 88.7244 81.4478 85.0057 81.4478C80.9744 81.4478 77.7401 80.0024 75.3026 77.1118C72.8807 74.2212 71.6697 70.354 71.6697 65.5103V62.229C71.6697 59.0571 72.2322 56.2681 73.3572 53.8618C74.4979 51.4556 76.1072 49.6118 78.1854 48.3306C80.2635 47.0337 82.6697 46.3853 85.4041 46.3853C89.0291 46.3853 91.9354 47.4009 94.1229 49.4321C96.3104 51.4478 97.5838 54.2446 97.9432 57.8228H93.4197C93.0291 55.104 92.1776 53.1353 90.8651 51.9165C89.5682 50.6978 87.7479 50.0884 85.4041 50.0884C82.5291 50.0884 80.2713 51.1509 78.6307 53.2759C77.0057 55.4009 76.1932 58.4243 76.1932 62.3462V65.6509C76.1932 69.354 76.9666 72.2993 78.5135 74.4868C80.0604 76.6743 82.2244 77.7681 85.0057 77.7681C87.5057 77.7681 89.4197 77.2056 90.7479 76.0806C92.0916 74.9399 92.9822 72.9634 93.4197 70.1509H97.9432Z"
+                fill="#fff"
+              />
+            </svg> </a
+          ><button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <!-- <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#about"><span class="inline-block ml-2">Portfolio</span></a> -->
+            </li>
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#about"><span class="inline-block ml-2">About Me</span></a>
+            </li>
+            <li class="flex items-center">
+              <!-- <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#pablo"><span class="inline-block ml-2">Blog</span></a> -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar ends -->
+
+    <!-- Landing Page -->
+    <main>
+      <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 110vh">
+        <div class="absolute top-0 w-full h-full" id="showcase">
+          <span id="blackOverlay" class="w-full h-full absolute opacity-25 bg-black"></span>
+        </div>
+        <div class="container relative mx-auto">
+          <div class="items-center flex flex-wrap" style="min-height: 50vh">
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="pr-12 ">
+                <span class="mt-4 text-lg text-white">Web Developer | Designer</span>
+                <h1 class="text-white font-semibold text-5xl mb-20">Joshua Coutinho</h1>
+                <a class="bg-white text-black font-semibold py-2 px-4 rounded shadow inline-block mt-10" href="#portfolio" >View My Work</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Landing SVG -->
+        <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0px)">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+      </div>
+
+      <!-- About  -->
+      <section class="pb-10 bg-white -mt-24" style="min-height: 50vh" id="about" >
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap">
+            <!-- Empty  -->
+          </div>
+          <div class="flex flex-wrap items-center mt-32" data-aos="zoom-in">
+            <div class="w-full md:w-6/12 px-4 mr-auto ml-auto">
+              <h3 class="text-4xl text-black mb-2 font-semibold leading-normal text-center">About Me</h3>
+              <p class="text-xl font-xl leading-relaxed mt-10 mb-4 text-black">Hi, I am a Web Developer and a UX | UI Designer based in Mumbai, Maharashtra, IN.</p>
+              <p class="text-xl font-xl leading-relaxed mt-0 mb-4 text-black">Primarily I started out learning to build with Front End Technologies, but now I am also branching into the Back End </p>
+            </div>
+            
+            
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="relative py-20" id="portfolio">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px)">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4">
+          <!-- Card 1 -->
+          <div class="items-center flex flex-wrap mt-20">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <img alt="activity" class="max-w-full" src="./assets/img/activity.png" id="activityimg" data-aos="fade-right" />
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4 " data-aos="fade-left">
+                <h3 class="text-3xl font-semibold">Activity Generator</h3>
+                <p class="mt-4 text-lg leading-relaxed text-black-600 ">This is a basic activity generator where you click a button and it fetches an activity from the Bored API</p>
+                <ul class="list-none mt-6">
+                  <li class="py-1">
+                    <div class="flex items-center">
+                      <p class="text-lg font-semibold">Technologies Used</p>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-html5 fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">HTML 5</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-css3-alt fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">CSS 3</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-js fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">JavaScript</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-1">
+                    <div class="flex items-center">
+                      <a class="bg-gray text-black font-semibold py-2 px-4 border border-black rounded shadow mt-10" href="https://amazing-knuth-2d3cb1.netlify.app/" target="_blank">Visit The Site</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+          <div class="items-center flex flex-wrap mt-20" id="card2">
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-right">
+                <h3 class="text-3xl font-semibold">Photography Portfolio</h3>
+                <p class="mt-4 text-lg leading-relaxed text-black">Made a portfolio website for my photography friend, the website has an image gallery and a contact form</p>
+                <ul class="list-none mt-6">
+                  <li class="py-1">
+                    <div class="flex items-center">
+                      <p class="text-lg font-semibold">Technologies Used</p>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-html5 fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">HTML 5</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-css3-alt fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">CSS 3</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-js fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">JavaScript</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-1">
+                    <div class="flex items-center">
+                      <a class="bg-gray text-black-800 font-semibold py-2 px-4 border border-black rounded shadow mt-10 " href="https://musing-northcutt-717aec.netlify.app/" target="_blank">Visit The Site</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+                <img alt="activity" class="max-w-full" src="./assets/img/rmsh.png" id="activityimg" data-aos="fade-left" />
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+          <div class="items-center flex flex-wrap mt-20" id="card2">
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
+              <img alt="activity" class="max-w-full" src="./assets/img/quote.png" id="activityimg" data-aos="fade-right"/>
+            </div>
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-left">             
+                <h3 class="text-3xl font-semibold">Random Quote Machine</h3>
+                <p class="mt-4 text-lg leading-relaxed text-black">A website where you can get a random quote from an array and share it to Facebook and Twitter, also it has Dark mode integrated</p>
+                <ul class="list-none mt-6">
+                  <li class="py-1">
+                    <div class="flex items-center">
+                      <p class="text-lg font-semibold">Technologies Used</p>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-html5 fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">HTML 5</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-css3-alt fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">CSS 3</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-2">
+                    <div class="flex items-center">
+                      <div>
+                        <span class="text-lg font-semibold inline-block py-2 px-3 uppercase mr-3"><i class="fab fa-js fa-2x"></i></span>
+                      </div>
+                      <div>
+                        <h4 class="text-black font-bold">JavaScript</h4>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="py-1">
+                    <div class="flex items-center">
+                      <a class="bg-gray text-black-800 font-semibold py-2 px-4 border border-black rounded shadow mt-10" href="https://serene-knuth-84ef18.netlify.app/" target="_blank">Visit The Site</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies I use -->
+      <section class="pt-20 pb-48">
+        <div class="container mx-auto px-4 bg-white" data-aos="fade-in">
+          <div class="flex flex-wrap justify-center text-center mb-24">
+            <div class="w-full lg:w-6/12 px-4">
+              <h2 class="text-4xl font-semibold">Technologies I Prefer</h2>
+              <p class="text-xl leading-relaxed m-4 text-black-600">Below are the Languages and Frameworks which I use frequently.</p>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <span class="text-lg font-semibold text-green-100 inline-block  mr-3"><i class="fab fa-js fa-7x"></i></span>
+                <div class="pt-6 text-left">
+                  <h5 class="text-xl font-bold">JavaScript</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <span class="text-lg font-semibold inline-block  mr-3"><i class="fab fa-node-js fa-7x"></i></span>
+                <div class="pt-6 text-left">
+                  <h5 class="text-xl font-bold">Node JS</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <span class="text-lg font-semibold inline-block  mr-3"><i class="fab fa-react fa-7x"></i></span>
+                <div class="pt-6 text-left">
+                  <h5 class="text-xl font-bold">React</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+              <div class="px-6">
+                <span class="text-lg font-semibold inline-block  mr-3"><i class="fab fa-figma fa-7x"></i></span>
+                <div class="pt-6 text-left">
+                  <h5 class="text-xl font-bold">Figma</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="pb-20 relative block bg-gray-900">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px)">
+          <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+            <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64" ></div>
+          <section class="relative block py-24 lg:pt-0 bg-gray-900" data-aos="zoom-in">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+                <div class="w-full lg:w-6/12 px-4 text-center">
+                  <h4 class="text-3xl font-semibold text-white">Want to keep in touch!</h4>
+                  <h5 class="text-lg mt-5 mb-2 text-white">Find me on any of these platforms</h5>
+                  <div class="mt-6 flex justify-between p-5">
+                    <a href="https://twitter.com/allen_herze" target="_blank" class="bg-transparent text-white shadow-lg font-normal h-100 w-100 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                      <i class="flex fab fa-twitter fa-4x"></i></a
+                    ><a href="https://www.facebook.com/allenherze" target="_blank" class="bg-transparent text-white shadow-lg font-normal h-100 w-100 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                      <i class="flex fab fa-facebook-square fa-4x "></i></a
+                    ><a href="https://github.com/allenherze" target="_blank" class="bg-transparent shadow-lg font-normal h-100 w-100 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3" type="button">
+                      <i class="flex fab fa-github fa-4x text-white "></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </main>
+    <footer class="relative bg-gray-300 pt-8 pb-6" >
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0px)">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap items-center md:justify-between justify-center">
+          <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+            <div class="text-lg text-black font-semibold py-1 ">
+              Copyright © 2020 Joshua Coutinho
+              <a href="https://www.creative-tim.com" class="block mt-1 text-black hover:text-gray-900">Built with Tailwind Starter Kit</a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle('hidden');
+      document.getElementById(collapseID).classList.toggle('block');
+    }
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400,
+      duration: 600,
+    });
+  </script>
+</html>

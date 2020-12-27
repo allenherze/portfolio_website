@@ -1,0 +1,36 @@
+/* Custom Styling */
+/* * {
+  border: 1px solid red;
+} */
+
+#showcase {
+  background-image: url(./assets/img/landing.jpg);
+  background-position: -60% 60%;
+}
+
+#activityimg {
+  transform: scale(2.1);
+}
+
+#card2 {
+  margin-top: 10rem;
+  padding-top: 5rem;
+}
+
+#btn-portfolio {
+  margin-top: 10rem;
+}
+
+@media (max-width: 400px) {
+  #showcase {
+    background-image: none;
+    max-width: 100%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #activityimg {
+    transform: scale(1.5);
+  }
+}
