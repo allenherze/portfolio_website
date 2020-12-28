@@ -18,7 +18,7 @@
       <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="#home">
-              <svg width="60" height="60" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="50" height="50" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="65" cy="65" r="62.5" stroke="#ffffff" stroke-width="5"/>
                 <g filter="url(#filter0_d)">
                 <path d="M71.0838 37.7915H77.5526V74.0376C77.5526 78.936 76.2986 82.7681 73.7908 85.5337C71.3065 88.2993 67.9549 89.6821 63.7361 89.6821C59.4002 89.6821 56.0252 88.3696 53.6111 85.7446C51.1971 83.1196 49.9901 79.4868 49.9901 74.8462H56.4236C56.4236 77.7759 57.0682 80.061 58.3572 81.7017C59.6463 83.3423 61.4393 84.1626 63.7361 84.1626C65.9627 84.1626 67.744 83.272 69.0799 81.4907C70.4158 79.7095 71.0838 77.2134 71.0838 74.0024V37.7915Z" fill="#ffffff"/>
@@ -111,7 +111,7 @@
         </div>
         <div class="container mx-auto px-4">
           <!-- Card 1 -->
-          <div class="items-center flex flex-wrap mt-20">
+          <div class="items-center flex flex-wrap mt-20" id="card1">
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
               <img alt="activity" class="max-w-full" src="./assets/img/activity.png" id="activityimg" data-aos="fade-right" />
             </div>
@@ -164,7 +164,7 @@
             </div>
 
             <!-- Card 2 -->
-          <div class="items-center flex flex-wrap mt-20" id="card2">
+          <div class="items-center flex flex-wrap mt-20 " id="card2">
             <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-right">
                 <h3 class="text-3xl font-semibold">Photography Portfolio</h3>
                 <p class="mt-4 text-lg leading-relaxed text-black">Made a portfolio website for my photography friend, the website has an image gallery and a contact form</p>
@@ -217,7 +217,7 @@
             </div>
 
             <!-- Card 3 -->
-          <div class="items-center flex flex-wrap mt-20" id="card2">
+          <div class="items-center flex flex-wrap mt-20" id="card3">
             <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
               <img alt="activity" class="max-w-full" src="./assets/img/quote.png" id="activityimg" data-aos="fade-right"/>
             </div>
@@ -281,12 +281,12 @@
               <p class="text-xl leading-relaxed m-4 text-black-600">Below are the Languages and Frameworks which I use frequently.</p>
             </div>
           </div>
-          <div class="flex flex-wrap justify-center">
+          <div class="flex flex-wrap justify-center" id="skills">
             <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div class="px-6">
                 <span class="text-lg font-semibold text-green-100 inline-block  mr-3"><i class="fab fa-js fa-7x"></i></span>
                 <div class="pt-6 text-left">
-                  <h5 class="text-xl font-bold">JavaScript</h5>
+                  <h5 class="text-xl font-bold" id="skill-header">JavaScript</h5>
                   </div>
               </div>
             </div>
@@ -294,7 +294,7 @@
               <div class="px-6">
                 <span class="text-lg font-semibold inline-block  mr-3"><i class="fab fa-node-js fa-7x"></i></span>
                 <div class="pt-6 text-left">
-                  <h5 class="text-xl font-bold">Node JS</h5>
+                  <h5 class="text-xl font-bold" id="skill-header">Node JS</h5>
                   </div>
               </div>
             </div>
@@ -302,7 +302,7 @@
               <div class="px-6">
                 <span class="text-lg font-semibold inline-block  mr-3"><i class="fab fa-react fa-7x"></i></span>
                 <div class="pt-6 text-left">
-                  <h5 class="text-xl font-bold">React</h5>
+                  <h5 class="text-xl font-bold" id="skill-header">React</h5>
                   </div>
               </div>
             </div>
@@ -310,7 +310,7 @@
               <div class="px-6">
                 <span class="text-lg font-semibold inline-block  mr-3"><i class="fab fa-figma fa-7x"></i></span>
                 <div class="pt-6 text-left">
-                  <h5 class="text-xl font-bold">Figma</h5>
+                  <h5 class="text-xl font-bold" id="skill-header">Figma</h5>
                   </div>
                 </div>
               </div>
@@ -327,10 +327,10 @@
           </svg>
         </div>
         <div class="container mx-auto px-4 lg:pt-24 lg:pb-64" ></div>
-          <section class="relative block py-24 lg:pt-0 bg-gray-900" data-aos="zoom-in">
+          <section class="relative block py-24 lg:pt-0 bg-gray-900" data-aos="zoom-in" >
             <div class="container mx-auto px-4">
-              <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-                <div class="w-full lg:w-6/12 px-4 text-center">
+              <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48" >
+                <div class="w-full lg:w-6/12 px-4 text-center" id="social">
                   <h4 class="text-3xl font-semibold text-white">Want to keep in touch!</h4>
                   <h5 class="text-lg mt-5 mb-2 text-white">Find me on any of these platforms</h5>
                   <div class="mt-6 flex justify-between p-5">
