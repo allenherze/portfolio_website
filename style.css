@@ -16,6 +16,15 @@
   margin-top: 10rem;
   padding-top: 5rem;
 }
+#card3 {
+  margin-top: 10rem;
+  padding-top: 5rem;
+}
+
+#card4 {
+  margin-top: 10rem;
+  padding-top: 5rem;
+}
 
 #btn-portfolio {
   margin-top: 10rem;
@@ -23,9 +32,10 @@
 
 @media (max-width: 400px) {
   #showcase {
-    background-image: none;
     max-width: 100%;
-    background-color: black;
+    background: url('./assets/img/phone.jpg');
+    background-position: center center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
   }
@@ -34,8 +44,21 @@
     display: none;
   }
 
+  #card1 {
+    padding: 1rem;
+  }
+
   #card2 {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
+  #card3 {
     margin-top: 2rem;
+    padding: 1rem;
+  }
+  #card4 {
+    margin-top: 2rem;
+    padding: 1rem;
   }
 
   #skills {
@@ -56,5 +79,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  #technology .fab {
+    font-size: 4rem;
   }
 }
